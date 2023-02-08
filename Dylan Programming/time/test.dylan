@@ -3,22 +3,22 @@ module: time
 // ----------------------------------------------------------------------------
 
 // Time offset objects
-define variable *my-time-offset* :: <time-offset> =
-  make(<time-offset>, total-seconds: encode-total-seconds(15, 20, 10));
-define variable *your-time-offset* :: <time-offset> =
-  make(<time-offset>, total-seconds: - encode-total-seconds(6, 45, 30));
+define variable *my-time-offset* :: <time-offset>
+  = make(<time-offset>, total-seconds: encode-total-seconds(15, 20, 10));
+define variable *your-time-offset* :: <time-offset>
+  = make(<time-offset>, total-seconds: - encode-total-seconds(6, 45, 30));
 
 // Time of day objects
-define variable *my-time-of-day* :: <time-of-day> =
-  make(<time-of-day>, total-seconds: encode-total-seconds(0, 2, 0));
-define variable *your-time-of-day* :: <time-of-day> =
-  make(<time-of-day>, total-seconds: encode-total-seconds(8, 30, 59));
+define variable *my-time-of-day* :: <time-of-day>
+  = make(<time-of-day>, total-seconds: encode-total-seconds(0, 2, 0));
+define variable *your-time-of-day* :: <time-of-day>
+  = make(<time-of-day>, total-seconds: encode-total-seconds(8, 30, 59));
 
 // Offsets to add
-define variable *minus-2-hours* :: <time-offset> =
-  make(<time-offset>, total-seconds: - encode-total-seconds (2, 0, 0));
-define variable *plus-15-20-45* :: <time-offset> =
-  make(<time-offset>, total-seconds: encode-total-seconds (15, 20, 45));
+define variable *minus-2-hours* :: <time-offset>
+  = make(<time-offset>, total-seconds: - encode-total-seconds (2, 0, 0));
+define variable *plus-15-20-45* :: <time-offset>
+  = make(<time-offset>, total-seconds: encode-total-seconds (15, 20, 45));
 
 // ----------------------------------------------------------------------------
 
@@ -71,3 +71,4 @@ format-out("%s\n", *plus-15-20-45* > *minus-2-hours*); // 10
 */
 
 // ----------------------------------------------------------------------------
+

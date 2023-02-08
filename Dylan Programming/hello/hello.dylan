@@ -43,3 +43,22 @@ end method main;
 main();
 
 // ----------------------------------------------------------------------------
+
+/*
+
+  Output
+
+  Hello, world
+  hi, there
+  Lucky number is 14
+  {class <integer>}
+  Object
+  Float
+  #({class <string>}, {class <mutable-sequence>},
+    {class <mutable-collection>}, {class <sequence>},
+    {class <collection>}, {class <mutable-object-with-elements>},
+    {class <object-with-elements>}, {class <object>})
+
+*/
+
+// ----------------------------------------------------------------------------
